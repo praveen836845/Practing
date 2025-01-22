@@ -65,6 +65,18 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 */
 
+function  replace_function(nums) {
+    let k = 2 ; 
+    for(let i= 2; i< nums; i++){
+        if(nums[i]!= nums[k-2]){
+            nums[k] = nums[i];
+            k++
+        }
+
+    }
+    return k;
+}
+
 
 
 
